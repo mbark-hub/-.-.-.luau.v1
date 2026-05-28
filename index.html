@@ -354,7 +354,7 @@
             const textToCopy = codeArea.innerText;
             navigator.clipboard.writeText(textToCopy).then(() => {
                 const originalText = copyBtn.innerText;
-                copyBtn.innerText = "تم النسخ الرابط";
+                copyBtn.innerText = "تم النسخ السكربت";
                 setTimeout(() => {
                     copyBtn.innerText = originalText;
                 }, 2000);
