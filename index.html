@@ -204,7 +204,8 @@ async function fetchScript(){
     const resultBox = document.getElementById("resultBox");
     const output = document.getElementById("output");
 
-    if(!url){
+    
+    if(!url || (!url.includes("https") && !url.includes("raw"))){
         alert("حط الرابط ي حب");
         return;
     }
